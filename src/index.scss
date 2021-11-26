@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap');
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    border-bottom: 3px solid white;  
+    padding-top: 1rem;
+    
+}
+
+.container {
+    max-width: 100%;
+}
+
+.logo{
+    
+    font-family:'Dancing Script';
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 0 0.7rem 0 0.7rem;
+    border-radius: 50px;
+   
+}
+
+.logoButton{
+    display: flex;
+    background: none;
+    border-radius: 5px;
+    border:none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 'none';
+    margin-left: 2rem;
+}
+
+
+
+.headerButtons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+.buttonHeader{
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Open Sans' , cursive;
+    margin: 0 0.4rem 0 0 ;
+    background-color: #BFA2DB;
+    
+}
+
+.headerIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerIconsText{
+    color: white;
+    font-size: 2.3rem;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+
+
+.footer{
+    border: 5px solid;
+    border-color: black;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 95%;
+}
+
+
+
+.biggerTextCenter{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.biggerTextSecondaryTitle{
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.normalText{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.normalTextIcons{
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+.topRowTitle{
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.rowProjectsTitles{
+    border: 1px white solid;
+    margin-top: 1rem;
+    border-radius: 3px;
+    border-bottom: none;
+}
+
+
+.textWelcome{
+    color: white;
+}
+
+.rowProjects{
+    border: 1px white solid;
+    border-top: none;
+}
+
+.rotate-words {
+    display: inline;
+    padding-right: 12rem;
+}
+
+.rotate-words span {
+    opacity: 0;
+    position: absolute;
+    font-weight: bold;
+    padding: 0 10px 0 5px;
+    color: white;
+    transition: color 0.25s ease-in-out;
+    animation: rotateWord 21s linear infinite 0s;
+    &:nth-child(2) {
+        animation-delay: 3s;
+    }
+    &:nth-child(3) {
+        animation-delay: 6s;
+    }
+    &:nth-child(4) {
+        animation-delay: 9s;
+    }
+    &:nth-child(5) {
+        animation-delay: 12s;
+    }
+    &:nth-child(6) {
+        animation-delay: 15s;
+    }
+    &:nth-child(7) {
+        animation-delay: 18s;
+    }
+}
+
+@keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    17% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+
+.unorderedListTechStack{
+    list-style-type: none;
+    display: inline;
+    overflow-x: auto;
+}
+
+.listItemTechStack{
+    display: inline-block;
+    padding: 2px 5px 5px 2px;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin: 4px;
+    color:black;
+    background-color: white;
+}
+
+////////////////////////////////////////////////CONTACT FORM///////////////////////////////////////////////
+
+.contactForm{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.formRows{
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////GAME SCSS///////////////////////////////////////////////
+:root {
+    --numX: 1; // JS will set this to a new value
+    --grid-size: 50px;
+    --grid-gap: 3px;
+    --end-color: #d4e6e8;
+  }
+
+.containerGame {
+    margin: 1rem 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--numX), var(--grid-size));
+    grid-auto-rows: var(--grid-size);
+    grid-gap: var(--grid-gap);
+  }
+  
+  .toggle-on, .toggle-off {
+    border-radius: 50%;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .toggle-on {
+    background-color: white;
+    animation: flare-on 0.5s ease-out 0s forwards;
+  }
+  
+  .toggle-off {
+    animation: flare-off 0.5s ease-out 0s forwards;
+  }
+  
+  .score {
+    margin: 1.1em;
+    text-align: center;
+    font-family: Open Sans, cursive;
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: #555;
+  }
+  
+  @keyframes flare-on {
+    from {background-color: #a57;}
+    to {background-color: #0b9;}
+  }
+  
+  @keyframes flare-off {
+    from {background-color: #a57;}
+    to {background-color: #d4e6e8;}
+  }
+  
+  @media (max-width: 440px) {
+    :root {
+      --grid-size: calc((95vw / var(--numX)) - var(--grid-gap));
+    }
+  }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////CALCULATOR SCSS///////////////////////////////////////////////
+.calculatorApp{
+    position: relative;
+	z-index: 10;
+	margin: auto;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.05);
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(12px);
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.containerKeyboard {
+	color: #fff;
+}
+.result {
+	width: 300px;
+	height: 120px;
+	padding: 20px 30px;
+	text-align: right;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+	border-right: 1px solid rgba(255, 255, 255, 0.02);
+    border: 1px solid white;
+}
+.result .history {
+	font-size: 19px;
+    color: white;
+}
+.result .output {
+	font-size: 35px;
+	bottom: 18px;
+    color: white;
+}
+.result .history,
+.result .output {
+	right: 25px;
+	width: 200vw;
+	position: absolute;
+	text-align: right;
+    color: white;
+}
+.keyboard {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.keyboard div.btnKeyboard {
+	display: -ms-grid;
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 75px;
+	padding: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+	border-right: 1px solid rgba(255, 255, 255, 0.02);
+    color: white;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+.keyboard div.btnKeyboard#clear {
+	-ms-grid-column: 1;
+	grid-column-start: 1;
+	grid-column-end: 3;
+    color: white;
+}
+.keyboard div.btnKeyboard:hover {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	background: rgba(255, 255, 255, 0.06);
+}
+.keyboard div.btnKeyboard:active {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	font-weight: bold;
+	background: #0011fd;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////CALCULATOR SCSS///////////////////////////////////////////////
+.containerCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.inputTodo{
+    border-radius: 5px;
+    color: white;
+    font-family: Open Sans, cursive;
+}
+
+.todoCard{
+    background-color:white;
+    border-radius: 7px;
+    margin: 0.5rem 0 0.3rem 0;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
