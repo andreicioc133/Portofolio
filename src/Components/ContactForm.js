@@ -5,7 +5,7 @@ function ContactForm() {
     return (
         <Row className="rows">
             <Col Col xs={12} sm={12} md={12} lg={12} xxl={12} className="centeredColumn">
-                <Form action="/contact" name="contact" method="post" className = "contactForm" data-netlify="true">
+                <Form name="contact" method="POST" className = "contactForm" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
