@@ -371,6 +371,7 @@
 }
 .keyboard div.btnKeyboard#clear {
 	-ms-grid-column: 1;
+    grid-column: 1;
 	grid-column-start: 1;
 	grid-column-end: 3;
     color: white;

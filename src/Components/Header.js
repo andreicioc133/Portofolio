@@ -1,8 +1,8 @@
-import React , { useEffect } from "react";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import React from "react";
+import { Col,  Row, Button } from "react-bootstrap";
 import { scroller } from "react-scroll";
 import { linearGradients } from "../styles/styles";
-import { BsFacebook, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import {  BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import { getWindowDimensions } from "./WindowDimension";
 
 function Header() {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import TechStack from "../Components/TechStack";
 import Header from "../Components/Header";

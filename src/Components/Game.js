@@ -17,7 +17,7 @@ class Game extends React.Component {
   
   toggleBlok(index) {
     const stateList = this.state.stateList;
-    stateList[index] = stateList[index] == 1 ? 0 : 1;
+    stateList[index] = stateList[index] === 1 ? 0 : 1;
     this.setState({ stateList: stateList });
   }
 
@@ -35,7 +35,7 @@ class Game extends React.Component {
 
   render() {
     const blokList = this.state.stateList.map((val, index) => {
-      const blokClass = val == 1 ? "toggle-on" : "toggle-off";
+      const blokClass = val === 1 ? "toggle-on" : "toggle-off";
       return (
         <Blok blokClass={blokClass} onClick={() => this.handleClick(index)} />
       );
@@ -44,7 +44,7 @@ class Game extends React.Component {
     const scoreNum = this.state.stateList.reduce((total, n) => {
       return total + n;
     });
-    const scorePercent = Math.floor(scoreNum / (numX * numY) * 100);
+    
 
     return (
       <div>

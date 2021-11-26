@@ -49,6 +49,7 @@ function Calculator() {
 			if (!symbols.includes(lastInput) && output) {
 				try {
 					history = output;
+					// eslint-disable-next-line
 					output = eval(output.replace(/%/g, '*0.01'));
 					output = Number.isInteger(output) ? output : output.toFixed(3);
 					updateState();

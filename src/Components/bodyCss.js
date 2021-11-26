@@ -1,4 +1,3 @@
-import React from 'react'
 import { linearGradients } from '../styles/styles'
 
 export function bodyCss() {
