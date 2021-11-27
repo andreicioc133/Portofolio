@@ -3,24 +3,26 @@ import { Row, Col , Button , Form} from 'react-bootstrap'
 
 function ContactForm() {
 
+    const [formValues, setFormValues] = useState({
+        email:'',
+        name: '',
+        message: ''
+    })
+
     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
       }
 
-    const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-        const [formValues, setFormValues] = useState({
-        email:'',
-        name: '',
-        message: ''
-    })
+    const handleChange = e => setFormValues({[e.target.name]: e.target.value })
+        
 
     const handleSubmit = e => {
             fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact"})
+            body: encode({ "form-name": "contact", ...formValues})
             })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -36,7 +38,7 @@ function ContactForm() {
                     {/* Name */}
                     <Form.Group className="mb-3" controlId="formName">
                         <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="text" value="asd" name="name" placeholder="Full Name" className = "formRows" onChange={handleChange}/>
+                        <Form.Control type="text"  name="name" placeholder="Full Name" className = "formRows" onChange={handleChange}/>
                     </Form.Group>
                     {/* Email */}
                     <Form.Group className="mb-3" controlId="formBasicEmail">
