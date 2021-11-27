@@ -7,7 +7,8 @@ function TechStack() {
         >
             I do  
                 <div class="rotate-words">
-                    <span>HTML/CSS/JAVASCRIPT</span>
+                    <span>HTML/CSS</span>
+                    <span>JAVASCRIPT</span>
                     <span>React.js</span>
                     <span>React-Native</span>
                     <span>Python</span>

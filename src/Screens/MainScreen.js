@@ -96,7 +96,8 @@ function MainScreen() {
             My main stack is composed by the following components:
           </p>
           <ul className="normalText unorderedListTechStack">
-            <li className="listItemTechStack">HTML/CSS/JAVASCRIPT</li>
+            <li className="listItemTechStack">HTML/CSS</li>
+            <li className="listItemTechStack">Javascript</li>
             <li className="listItemTechStack">React.js</li>
             <li className="listItemTechStack">React Native</li>
             <li className="listItemTechStack">Redux</li>
