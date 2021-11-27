@@ -294,7 +294,7 @@ function MainScreen() {
       <Row className="rows">
         <Col xs={12} sm={12} md={12} lg={12} className="centeredColumn">
           <p 
-            className="biggerTextSecondaryTitle scrollToContactMe" 
+            className="normalText scrollToContactMe" 
             style = {{fontWeight:'normal'}}>You can contact me by sending me an E-mail at : <strong>andrei.cioc97@gmail.com </strong> 
             or you can send me a message now by completing the below form:</p>
         </Col>
