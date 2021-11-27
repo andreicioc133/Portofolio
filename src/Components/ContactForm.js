@@ -38,12 +38,23 @@ function ContactForm() {
                     {/* Name */}
                     <Form.Group className="mb-3" controlId="formName">
                         <Form.Label>Full Name</Form.Label>
-                        <Form.Control type="text"  name="name" placeholder="Full Name" className = "formRows" onChange={handleChange}/>
+                        <Form.Control 
+                            type="text"  
+                            name="name"
+                            placeholder="Full Name" 
+                            className = "formRows" 
+                            onChange={handleChange} 
+                            required/>
                     </Form.Group>
                     {/* Email */}
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" name="email" className = "formRows" onChange={handleChange}/>
+                        <Form.Control 
+                            type="email" 
+                            placeholder="Enter email" 
+                            name="email" className = "formRows" 
+                            onChange={handleChange} 
+                            required/>
                         <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                         </Form.Text>
@@ -51,7 +62,14 @@ function ContactForm() {
                     {/* Password */}
                     <Form.Group className="mb-3" controlId="formDesc">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows={4} name="message" className = "formRows" style={{fontSize:'1.1rem'}} onChange={handleChange}/>
+                        <Form.Control 
+                            as="textarea" 
+                            rows={4} 
+                            name="message" 
+                            className = "formRows" 
+                            style={{fontSize:'1.1rem'}} 
+                            onChange={handleChange} 
+                            required/>
                     </Form.Group>
                     <Button variant="outline-secondary" className="buttonHeader" type="submit" >
                         Submit
