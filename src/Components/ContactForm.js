@@ -15,7 +15,7 @@ function ContactForm() {
             .join("&");
       }
 
-    const handleChange = e => setFormValues({[e.target.name]: e.target.value })
+    const handleChange = e => setFormValues({...formValues, [e.target.name]: e.target.value })
         
 
     const handleSubmit = e => {
