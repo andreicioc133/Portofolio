@@ -3,7 +3,7 @@ import React from 'react'
 function TechStack() {
     return (
         <p 
-        style = {{color: 'white' , fontSize:'2.5rem', paddingRight:'5rem'}}
+        style = {{color: 'white' , fontSize:'1.8rem', paddingRight:'5rem'}}
         >
             I do  
                 <div class="rotate-words">

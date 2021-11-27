@@ -99,6 +99,7 @@ function MainScreen() {
             <li className="listItemTechStack">HTML/CSS/JAVASCRIPT</li>
             <li className="listItemTechStack">React.js</li>
             <li className="listItemTechStack">React Native</li>
+            <li className="listItemTechStack">Redux</li>
             <li className="listItemTechStack">Python</li>
             <li className="listItemTechStack">Django</li>
             <li className="listItemTechStack">Git/Github/Gitlab</li>
