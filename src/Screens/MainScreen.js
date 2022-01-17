@@ -66,7 +66,7 @@ function MainScreen() {
       <Row className="rows">
         <Col sm={12} md={12} lg={12} className="centeredColumn">
           <p className="normalText">
-            Hello! My name is Andrei, i'm 23y/o and i am a software developer at
+            Hello! My name is Andrei, i'm 24y/o and i am a software developer at
             the beggining of my journey. I'm based in romania and i work for a
             tech company named "Logit Consulting Solutions." I studied at
             "Universitatea Petrol-Gaze din Ploiesti" where i obtained my
@@ -291,6 +291,22 @@ function MainScreen() {
             aplication's functionality. As database i used PostgreSQL.
           </p>
         </Col>
+        
+        <Row className="rows">
+        <Col xs={12} sm={12} md={12} lg={12} className="centeredColumn">
+          <p className="biggerTextSecondaryTitle scrollToAboutMe">Upgrade + Stripe API Integration</p>
+        </Col>
+      </Row>
+      <Row className="rows">
+        <Col sm={12} md={12} lg={12} className="centeredColumn">
+          <p className="normalText">
+            Full upgrade on React Native old application + Stripe integration both in backend(Django) and frontend!
+            I upgraded the react and react-native versions, gradle version, all npm packages and fully converted the class based components
+            into functional components. I also upgraded the Django app, integrating new functionalities and API's. 
+          </p>
+        </Col>
+      </Row>
+
         {/* ***************************************    CONTACT FORM       ******************************************************* */}
       </Row>
       <Row className="rows">
